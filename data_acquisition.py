@@ -6,7 +6,7 @@ import time
 # Load Census API key
 # --------------------------------
 API = pd.read_csv("API_Keys.csv")
-API_CENSUS = API.iloc[1,1]  # adjust index if needed
+API_CENSUS = API.iloc[1,1]
 
 # --------------------------------
 # Parameters
