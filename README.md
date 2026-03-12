@@ -72,6 +72,3 @@ The final dataset contains **state-level observations from 2010–2017** and inc
 | aadr | Age-adjusted death rate per 100,000 |
 | deaths | Number of deaths |
 
----
-
-# Repository Structure
