@@ -121,10 +121,12 @@ final_df = pd.merge(
 )
 
 # Feature engineering
+
 final_df["poverty_rate"] = final_df["poverty_count"] / final_df["population"]
 final_df["cause_of_death"] = final_df["cause_name"]
-
 final_df = final_df[["year", "state", "cause_of_death", "population", "median_income", "poverty_count", "aadr", "poverty_rate"]]
+
+print(final_df.isna().sum())# CDC might not have reported 
 
 # Save dataset
 final_df.to_csv("influenza_pneumonia_dataset.csv", index=False)
